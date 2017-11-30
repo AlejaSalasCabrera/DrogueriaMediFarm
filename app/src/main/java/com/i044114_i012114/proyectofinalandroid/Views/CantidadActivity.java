@@ -1,0 +1,25 @@
+package com.i044114_i012114.proyectofinalandroid.Views;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+
+import com.i044114_i012114.proyectofinalandroid.R;
+
+public class CantidadActivity extends AppCompatActivity {
+Toolbar toolbar;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cantidad);
+
+        toolbar = (Toolbar) findViewById(R.id.id_toolbar);
+
+        showToolbar(getResources().getString(R.string.str_tb_p7));
+    }
+
+    public void showToolbar(String title){
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+    }
+}
